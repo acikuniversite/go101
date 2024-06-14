@@ -1,3 +1,2 @@
-# Ders 12
+# Ders 12: Goroutine Advanced Patterns(ileri Goroutine Desenleri)
 
-Bu dersin içeriği burada yer alacak.

@@ -1,9 +1,9 @@
-# Ders 6: Diziler ve Dilimler
+# Ders 6: Diziler ve Dilimler (Arrays and Slices)
 
-Bu derste Go dilinde diziler ve dilimleri öğreneceksiniz.
+Bu derste Go dilinde diziler (arrays) ve dilimleri (slices) öğreneceksiniz.
 
 ## İçerik
 
-- Dizi tanımlama
-- Dilim tanımlama
-- Dilim işlemleri
+- Dizi tanımlama (array definition)
+- Dilim tanımlama (slice definition)
+- Dilim işlemleri (slice operations)

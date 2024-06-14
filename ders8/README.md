@@ -1,9 +1,9 @@
-# Ders 8: Yapılar
+# Ders 8: Yapılar (Structs)
 
-Bu derste Go dilinde yapıları öğreneceksiniz.
+Bu derste Go dilinde yapıları (structs) öğreneceksiniz.
 
 ## İçerik
 
-- Yapı tanımlama
-- Yapı işlemleri
-- Yapı örnekleri
+- Yapı tanımlama (struct definition)
+- Yapı işlemleri (struct operations)
+- Yapı örnekleri (struct examples)

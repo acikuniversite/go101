@@ -1,9 +1,9 @@
-# Ders 3: Değişkenler ve Veri Tipleri
+# Ders 3: Değişkenler ve Veri Tipleri (Variables and Data Types)
 
-Bu derste Go dilinde değişkenler ve veri tiplerini öğreneceksiniz.
+Bu derste Go dilinde değişkenler (variables) ve veri tiplerini (data types) öğreneceksiniz.
 
 ## İçerik
 
-- Değişken tanımlama
-- Temel veri tipleri
-- Tip dönüşümleri
+- Değişken tanımlama (variable declaration)
+- Temel veri tipleri (basic data types)
+- Tip dönüşümleri (type conversions)

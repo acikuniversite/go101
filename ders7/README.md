@@ -1,9 +1,9 @@
-# Ders 7: Haritalar
+# Ders 7: Haritalar (Maps)
 
-Bu derste Go dilinde haritaları öğreneceksiniz.
+Bu derste Go dilinde haritaları (maps) öğreneceksiniz.
 
 ## İçerik
 
-- Harita tanımlama
-- Harita işlemleri
-- Harita örnekleri
+- Harita tanımlama (map definition)
+- Harita işlemleri (map operations)
+- Harita örnekleri (map examples)

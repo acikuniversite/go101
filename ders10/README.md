@@ -1,9 +1,9 @@
-# Ders 10: Hata Yönetimi
+# Ders 10: Hata Yönetimi (Error Handling)
 
-Bu derste Go dilinde hata yönetimini öğreneceksiniz.
+Bu derste Go dilinde hata yönetimini (error handling) öğreneceksiniz.
 
 ## İçerik
 
-- Hata tanımlama
-- Hata yakalama ve işleme
-- Özel hata türleri
+- Hata tanımlama (error definition)
+- Hata yakalama ve işleme (error catching and handling)
+- Özel hata türleri (custom error types)

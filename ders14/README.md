@@ -1,27 +1,27 @@
-# Microservices and Folder Structure (Microservis ve Klasör Yapısı)
+# Mikroservisler ve Klasör Yapısı
 
-## Introduction
+## Giriş
 
-In this lesson, we will explore the concept of microservices and how to structure your project folders effectively. Microservices architecture allows you to break down your application into smaller, manageable services that can be developed, deployed, and scaled independently.
+Bu derste, mikroservisler kavramını ve proje klasörlerinizi etkili bir şekilde nasıl yapılandıracağınızı inceleyeceğiz. Mikroservis mimarisi, uygulamanızı daha küçük, yönetilebilir hizmetlere ayırmanıza olanak tanır ve bu hizmetler bağımsız olarak geliştirilebilir, dağıtılabilir ve ölçeklendirilebilir.
 
-## What are Microservices?
+## Mikroservisler Nedir?
 
-Microservices are a software development technique—a variant of the service-oriented architecture (SOA) structural style—that arranges an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
+Mikroservisler, bir uygulamayı gevşek bağlı hizmetler koleksiyonu olarak düzenleyen bir yazılım geliştirme tekniğidir. Mikroservis mimarisinde, hizmetler ince tanelidir ve protokoller hafiftir.
 
-### Key Characteristics of Microservices
+### Mikroservislerin Temel Özellikleri
 
-- **Independently Deployable**: Each service can be developed, deployed, and scaled independently.
-- **Decentralized Data Management**: Each service manages its own database.
-- **Polyglot Programming**: Different services can be written in different programming languages.
-- **Fault Isolation**: Failure in one service does not affect others.
+- **Bağımsız Dağıtılabilirlik**: Her hizmet bağımsız olarak geliştirilebilir, dağıtılabilir ve ölçeklendirilebilir.
+- **Merkezi Olmayan Veri Yönetimi**: Her hizmet kendi veritabanını yönetir.
+- **Çok Dilli Programlama**: Farklı hizmetler farklı programlama dillerinde yazılabilir.
+- **Hata İzolasyonu**: Bir hizmetteki hata diğerlerini etkilemez.
 
-## Folder Structure
+## Klasör Yapısı
 
-A well-organized folder structure is crucial for maintaining a scalable and manageable codebase. Below is an example of a typical folder structure for a microservices project:
+İyi organize edilmiş bir klasör yapısı, ölçeklenebilir ve yönetilebilir bir kod tabanını korumak için çok önemlidir. Aşağıda, bir mikroservis projesi için tipik bir klasör yapısının örneği verilmiştir:
 
 ```
-project-root/
-├── service1/
+proje-kök/
+├── hizmet1/
 │   ├── src/
 │   │   ├── main.py
 │   │   ├── utils.py
@@ -29,7 +29,7 @@ project-root/
 │   │   ├── test_main.py
 │   ├── Dockerfile
 │   ├── requirements.txt
-├── service2/
+├── hizmet2/
 │   ├── src/
 │   │   ├── main.py
 │   │   ├── utils.py
@@ -37,7 +37,7 @@ project-root/
 │   │   ├── test_main.py
 │   ├── Dockerfile
 │   ├── requirements.txt
-├── gateway/
+├── geçit/
 │   ├── src/
 │   │   ├── main.py
 │   │   ├── utils.py
@@ -49,32 +49,32 @@ project-root/
 └── README.md
 ```
 
-### Explanation of the Folder Structure
+### Klasör Yapısının Açıklaması
 
-- **service1, service2, ...**: Each folder represents a microservice.
-  - **src/**: Contains the source code for the service.
-    - **main.py**: The entry point of the service.
-    - **utils.py**: Utility functions used by the service.
-  - **tests/**: Contains the test cases for the service.
-    - **test_main.py**: Test cases for the main.py file.
-  - **Dockerfile**: Instructions to build a Docker image for the service.
-  - **requirements.txt**: List of dependencies for the service.
+- **hizmet1, hizmet2, ...**: Her klasör bir mikroservisi temsil eder.
+  - **src/**: Hizmetin kaynak kodunu içerir.
+    - **main.py**: Hizmetin giriş noktası.
+    - **utils.py**: Hizmet tarafından kullanılan yardımcı fonksiyonlar.
+  - **tests/**: Hizmet için test vakalarını içerir.
+    - **test_main.py**: main.py dosyası için test vakaları.
+  - **Dockerfile**: Hizmet için bir Docker görüntüsü oluşturma talimatları.
+  - **requirements.txt**: Hizmetin bağımlılıklarının listesi.
 
-- **gateway/**: Acts as an API gateway to route requests to the appropriate microservice.
-  - **src/**: Contains the source code for the gateway.
-    - **main.py**: The entry point of the gateway.
-    - **utils.py**: Utility functions used by the gateway.
-  - **tests/**: Contains the test cases for the gateway.
-    - **test_main.py**: Test cases for the main.py file.
-  - **Dockerfile**: Instructions to build a Docker image for the gateway.
-  - **requirements.txt**: List of dependencies for the gateway.
+- **geçit/**: İstekleri uygun mikroservise yönlendiren bir API geçidi olarak görev yapar.
+  - **src/**: Geçidin kaynak kodunu içerir.
+    - **main.py**: Geçidin giriş noktası.
+    - **utils.py**: Geçit tarafından kullanılan yardımcı fonksiyonlar.
+  - **tests/**: Geçit için test vakalarını içerir.
+    - **test_main.py**: main.py dosyası için test vakaları.
+  - **Dockerfile**: Geçit için bir Docker görüntüsü oluşturma talimatları.
+  - **requirements.txt**: Geçidin bağımlılıklarının listesi.
 
-- **docker-compose.yml**: A Docker Compose file to run all the services together.
-- **README.md**: Documentation for the project.
+- **docker-compose.yml**: Tüm hizmetleri birlikte çalıştırmak için bir Docker Compose dosyası.
+- **README.md**: Proje için dokümantasyon.
 
-## Example Code
+## Örnek Kod
 
-Here is a simple example of a microservice written in Python using Flask:
+İşte Flask kullanarak Python'da yazılmış basit bir mikroservis örneği:
 
 ### main.py
 
@@ -112,7 +112,7 @@ CMD ["python", "main.py"]
 Flask==2.0.1
 ```
 
-## Conclusion
+## Sonuç
 
-Microservices architecture offers numerous benefits, including independent deployment, fault isolation, and the ability to use different technologies for different services. A well-structured folder organization is essential for maintaining the scalability and manageability of your microservices project.
+Mikroservis mimarisi, bağımsız dağıtım, hata izolasyonu ve farklı hizmetler için farklı teknolojiler kullanma yeteneği gibi birçok fayda sunar. İyi yapılandırılmış bir klasör organizasyonu, mikroservis projenizin ölçeklenebilirliğini ve yönetilebilirliğini korumak için gereklidir.
 

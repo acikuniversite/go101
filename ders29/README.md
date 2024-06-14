@@ -1,3 +1,3 @@
-# Ders 29
+# Ders 29: Go ile Mikroservis Mimarisi
 
-Bu dersin içeriği burada yer alacak.
+Bu derste, Go dilinde mikroservis mimarisi ile uygulama geliştirmeyi öğreneceksiniz. Mikroservislerin nasıl tasarlanacağını, geliştirileceğini ve yönetileceğini göreceksiniz.

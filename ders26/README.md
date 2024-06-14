@@ -1,3 +1,3 @@
-# Ders 26
+# Ders 26: Go ile Unit Test Yazma
 
-Bu dersin içeriği burada yer alacak.
+Bu derste, Go dilinde birim testlerini nasıl yazabileceğinizi öğreneceksiniz. Test paketlerini kullanarak kodunuzu nasıl test edebileceğinizi ve testlerinizi nasıl organize edebileceğinizi göreceksiniz.

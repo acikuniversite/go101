@@ -1,3 +1,3 @@
-# Ders 24
+# Ders 24: Go ile WebSocket Kullanımı
 
-Bu dersin içeriği burada yer alacak.
+Bu derste, Go dilinde WebSocket bağlantılarını nasıl kurabileceğinizi ve kullanabileceğinizi öğreneceksiniz. WebSocket ile gerçek zamanlı veri iletişimini nasıl gerçekleştirebileceğinizi göreceksiniz.

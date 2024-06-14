@@ -1,3 +1,3 @@
-# Ders 27
+# Ders 27: Go ile Performans Analizi
 
-Bu dersin içeriği burada yer alacak.
+Bu derste, Go dilinde performans analizi yapmayı öğreneceksiniz. Profil oluşturma araçlarını kullanarak kodunuzun performansını nasıl analiz edebileceğinizi ve performans iyileştirmeleri yapabileceğinizi göreceksiniz.

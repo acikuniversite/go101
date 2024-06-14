@@ -1,3 +1,2 @@
-# Ders 14
+# Microservices and Folder Structure (Microservis ve Klasör Yapısı)
 
-Bu dersin içeriği burada yer alacak.

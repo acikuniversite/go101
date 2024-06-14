@@ -17,7 +17,7 @@ Bu repo, Golang dilini öğrenmek isteyenler için temel konuları içeren bir e
 11. [Ders 11: İleri Fonksiyonlar](./ders11)
 12. [Ders 12: Paketler ve Modüller](./ders12)
 13. [Ders 13: Concurrency (Eşzamanlılık)](./ders13)
-14. [Ders 14: Hata Ayıklama ve Test](./ders14)
+14. [Ders 14: Microservices and Folder Structure](./ders14)
 15. [Ders 15: Web Uygulamaları](./ders15)
 16. [Ders 16: Veritabanı İşlemleri](./ders16)
 17. [Ders 17: API Geliştirme](./ders17)

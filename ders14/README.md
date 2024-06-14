@@ -23,7 +23,7 @@ Go, mikroservis geliştirme için ideal bir dildir. Basitliği, performansı ve 
 
 ### Proje Klasör Yapısı
 
-Mikroservis projelerinde düzenli bir klasör yapısı, kodun okunabilirliğini ve yönetilebilirliğini artırır. Aşağıda, tipik bir Go mikroservis projesi için önerilen klasör yapısı verilmiştir:
+Mikroservis projelerinde düzenli bir klasör yapısı, kodun okunabilirliğini ve yönetilebilirliğini artırır. Aşağıda, tipik bir Go mikroservis projesi için önerilen klasör yapısı ve her klasörün işlevi açıklanmıştır:
 
 ```
 /my-microservice
@@ -43,6 +43,22 @@ Mikroservis projelerinde düzenli bir klasör yapısı, kodun okunabilirliğini 
 |-- go.mod
 |-- go.sum
 ```
+
+#### /cmd
+
+Bu klasör, uygulamanın giriş noktalarını içerir. Her mikroservis için ayrı bir alt klasör oluşturulur. Örneğin, `service` alt klasörü, mikroservisin ana dosyasını (`main.go`) içerir.
+
+#### /pkg
+
+Bu klasör, diğer projeler tarafından kullanılabilecek genel kodları içerir. Örneğin, `api` alt klasörü, API ile ilgili işlevleri içerir ve `service` alt klasörü, mikroservisin iş mantığını içerir.
+
+#### /internal
+
+Bu klasör, yalnızca bu proje tarafından kullanılacak kodları içerir. Diğer projeler bu klasördeki kodlara erişemez. Örneğin, `config` alt klasörü, yapılandırma ile ilgili işlevleri içerir ve `database` alt klasörü, veritabanı bağlantılarını yönetir.
+
+#### go.mod ve go.sum
+
+`go.mod` dosyası, projenin bağımlılıklarını ve modül bilgilerini içerir. `go.sum` dosyası ise, bağımlılıkların doğrulama bilgilerini içerir.
 
 ### Örnek Mikroservis
 

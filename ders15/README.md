@@ -98,6 +98,44 @@ func main() {
 
 Bu örnekte, `/signup` ve `/login` yolları için handler fonksiyonları tanımlanmıştır. Kullanıcılar bu yolları ziyaret ederek kayıt olabilir veya giriş yapabilirler.
 
+## Bonus: Gin Kütüphanesi ile Web Uygulamaları
+
+Gin, Golang için popüler ve performanslı bir web framework'üdür. Gin kullanarak daha hızlı ve daha kolay web uygulamaları geliştirebilirsiniz. Aşağıda, Gin kullanarak basit bir web sunucusu oluşturma adımları bulunmaktadır:
+
+### Gin Kurulumu
+
+Gin'i kurmak için aşağıdaki komutu kullanabilirsiniz:
+
+```sh
+go get -u github.com/gin-gonic/gin
+```
+
+### Basit Bir Gin Uygulaması
+
+Aşağıda, Gin kullanarak basit bir web sunucusu oluşturma örneği bulunmaktadır:
+
+```go
+package main
+
+import (
+    "github.com/gin-gonic/gin"
+)
+
+func main() {
+    r := gin.Default()
+    r.GET("/ping", func(c *gin.Context) {
+        c.JSON(200, gin.H{
+            "message": "pong",
+        })
+    })
+    r.Run() // varsayılan olarak ":8080" portunda çalışır
+}
+```
+
+Bu kod, `localhost:8080/ping` adresinde çalışan basit bir web sunucusu oluşturur. Tarayıcınızda bu adresi ziyaret ettiğinizde `{"message": "pong"}` yanıtını görmelisiniz.
+
+Gin, daha karmaşık web uygulamaları geliştirmek için birçok özellik sunar. Detaylı bilgi için [Gin belgelerine](https://github.com/gin-gonic/gin) göz atabilirsiniz.
+
 ## Sonuç
 
 Bu derste, Golang kullanarak basit bir web uygulaması geliştirmeyi öğrendik. Golang'in güçlü ve verimli yapısını kullanarak daha karmaşık web uygulamaları geliştirebilirsiniz. İyi çalışmalar!

@@ -1,3 +1,3 @@
-# Ders 30: Go ile Dağıtık Sistemler
+# Ders 30: Go ile Serverless
 
-Bu derste, Go dilinde dağıtık sistemler geliştirmeyi öğreneceksiniz. Dağıtık sistemlerin temel kavramlarını, tasarım desenlerini ve Go ile nasıl uygulanabileceğini göreceksiniz.
+Bu derste, Go dilinde serverless uygulamaları nasıl geliştireceğinizi öğreneceksiniz. Serverless kavramını ve avantajlarını öğrenecek, Go dilinde serverless uygulamaları nasıl geliştirebileceğinizi göreceksiniz.

@@ -13,13 +13,15 @@ Bu ödevde, Go programlama dilinde temel veri tiplerini ve kontrol yapılarını
    import "fmt"
 
    func main() {
-       var age int = 25
+       var age int = 30
        var name string = "Ali"
        var isStudent bool = true
+       var gpa float64 = 3.75
 
        fmt.Println("Yaş:", age)
        fmt.Println("İsim:", name)
        fmt.Println("Öğrenci mi?:", isStudent)
+       fmt.Println("GPA:", gpa)
    }
    ```
 2. Terminal veya komut istemcisinde `go run main.go` komutunu çalıştırarak programınızı çalıştırın.
@@ -33,7 +35,7 @@ Bu ödevde, Go programlama dilinde temel veri tiplerini ve kontrol yapılarını
    import "fmt"
 
    func main() {
-       var age int = 25
+       var age int = 30
 
        if age < 18 {
            fmt.Println("Çocuk")
@@ -45,6 +47,21 @@ Bu ödevde, Go programlama dilinde temel veri tiplerini ve kontrol yapılarını
 
        for i := 0; i < 5; i++ {
            fmt.Println("Döngüdeyim:", i)
+       }
+
+       day := "Monday"
+       switch day {
+       case "Monday":
+           fmt.Println("Start of the work week.")
+       case "Friday":
+           fmt.Println("End of the work week.")
+       default:
+           fmt.Println("Midweek day.")
+       }
+
+       numbers := []int{1, 2, 3, 4, 5}
+       for index, value := range numbers {
+           fmt.Println(index, value)
        }
    }
    ```

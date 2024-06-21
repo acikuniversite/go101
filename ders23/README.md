@@ -1,6 +1,3 @@
-# Ders 23: Go ile HTTP İstekleri
-
-Bu derste, Go dilinde HTTP isteklerini nasıl yapabileceğinizi öğreneceksiniz. GET, POST, PUT ve DELETE isteklerini nasıl gerçekleştirebileceğinizi ve gelen yanıtları nasıl işleyeceğinizi göreceksiniz.
 # Ders 23: Go'da Clean Architecture
 
 Bu derste, Go dilinde Clean Architecture (Temiz Mimari) prensiplerini nasıl uygulayabileceğinizi öğreneceksiniz. Clean Architecture, yazılım projelerinde bağımlılıkları minimize ederek daha sürdürülebilir ve test edilebilir kod yazmayı amaçlar.

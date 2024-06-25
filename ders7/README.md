@@ -97,3 +97,16 @@ type Kitap struct {
 ```
 
 Bu ders kapsamında, Go dilinde yapıların nasıl tanımlandığını, kullanıldığını ve üzerinde nasıl işlemler yapıldığını öğrendiniz. Yapılar, verileri organize etmek ve yönetmek için güçlü bir araçtır.
+
+### Teorikten Pratiğe Ödevler (Sektörel & Gerçek Hayat Örneği ile)
+
+Ozet: Bir öğrenci ve öğrertmen ilişkisi tutan struct tanımlama
+
+1. Bir öğrenci yapısı tanımlayın. Bu yapı, öğrencinin adını, numarasını ve notlarını saklamalıdır ve öğretmen bilgisini de içermelidir.
+2. Her öğretmen bir öğrencidir ve her öğretmenin bir çok öğrencisi olabilir (struct ogrenciler array tutmalı)
+3. Öğrenci ve öğretmen yapısını kullanarak öğrenci ve öğretmen bilgilerini ekrana yazdırın.
+4. AddOgrenci ve AddOgretmen fonksiyonları ile öğrenci ve öğretmen ekleyin.
+5. 
+
+
+Sonraki Ders: [Yapılar (Structs)] (../ders7/README.md)

@@ -144,6 +144,6 @@ func main() {
 3. Bir fonksiyon alarak bu fonksiyonu 10 defa çalıştıran bir fonksiyon yazın.
 4. Bir fonksiyon alarak bu fonksiyonu belirli bir süre aralığında çalıştıran bir fonksiyon yazın. (Örneğin, 1 saniye aralıklarla 10 defa çalıştırma)
 
-## Sonraki Ders [Ders 6: Haritalar (Maps)](../ders6/README.md)
+Sonraki Ders [Ders 6: Haritalar (Maps)](../ders6/README.md)
 
 

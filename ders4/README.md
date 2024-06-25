@@ -122,7 +122,7 @@ Bu dersin sonunda, Go dilinde diziler ve dilimleri nasıl kullanacağınızı ö
 ```
 
 
-## Sonraki Ders: [Ders 5: Gelişmiş Fonksiyonlar (Advanced Functions)](../ders5/README.md)
+Sonraki Ders: [Ders 5: Gelişmiş Fonksiyonlar (Advanced Functions)](../ders5/README.md)
 
 
 

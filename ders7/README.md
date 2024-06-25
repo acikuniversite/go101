@@ -1,104 +1,99 @@
-# Ders 7: Haritalar (Maps)
+# Ders 7: Yapılar (Structs)
 
-Bu derste Go dilinde haritaları (maps) öğreneceksiniz.
+Bu derste Go dilinde yapıları (structs) öğreneceksiniz.
 
 ## İçerik
 
-- Harita Tanımlama (Map Definition)
-- Harita İşlemleri (Map Operations)
-- Harita Örnekleri (Map Examples)
+- Yapı Tanımlama (Struct Definition)
+- Yapı İşlemleri (Struct Operations)
+- Yapı Örnekleri (Struct Examples)
 
-## Harita Tanımlama (Map Definition)
+## Yapı Tanımlama (Struct Definition)
 
-Go dilinde haritalar, anahtar-değer (key-value) çiftlerini saklamak için kullanılır. Haritalar `map` anahtar kelimesi ile tanımlanır. Örneğin:
+Go dilinde yapı (struct), birden fazla veriyi bir arada tutmak için kullanılan veri yapısıdır. Aşağıda bir yapı tanımlama örneği bulunmaktadır:
 
 ```go
-package main
+type Kisi struct {
+    Isim    string
+    Yas     int
+    Meslek  string
+}
+```
 
-import "fmt"
+Bu örnekte, `Kisi` adında bir yapı tanımlanmıştır. Bu yapı, `Isim`, `Yas` ve `Meslek` adında üç alana sahiptir.
+
+## Yapı İşlemleri (Struct Operations)
+
+Yapılar üzerinde çeşitli işlemler yapabilirsiniz. Örneğin, bir yapı örneği oluşturabilir ve alanlarına değer atayabilirsiniz:
+
+```go
+func main() {
+    kisi := Kisi{
+        Isim:   "Ahmet",
+        Yas:    30,
+        Meslek: "Mühendis",
+    }
+
+    fmt.Println(kisi)
+}
+```
+
+Bu kod parçasında, `Kisi` yapısının bir örneği oluşturulmuş ve `Isim`, `Yas` ve `Meslek` alanlarına değerler atanmıştır.
+
+### Yapı Alanlarına Erişim
+
+Yapı alanlarına erişmek için nokta (`.`) operatörünü kullanabilirsiniz:
+
+```go
+fmt.Println("İsim:", kisi.Isim)
+fmt.Println("Yaş:", kisi.Yas)
+fmt.Println("Meslek:", kisi.Meslek)
+```
+
+### Yapı Fonksiyonları
+
+Yapılar için fonksiyonlar tanımlayabilirsiniz. Örneğin, `Kisi` yapısı için bir fonksiyon tanımlayalım:
+
+```go
+func (k Kisi) Bilgi() string {
+    return fmt.Sprintf("%s, %d yaşında, %s olarak çalışıyor.", k.Isim, k.Yas, k.Meslek)
+}
 
 func main() {
-    var m map[string]int
-    m = make(map[string]int)
-    fmt.Println(m)
+    kisi := Kisi{
+        Isim:   "Ahmet",
+        Yas:    30,
+        Meslek: "Mühendis",
+    }
+
+    fmt.Println(kisi.Bilgi())
 }
 ```
 
-Yukarıdaki kodda, `m` adında bir harita tanımlanmıştır. Bu harita `string` türünde anahtarlar ve `int` türünde değerler saklar.
+Bu örnekte, `Kisi` yapısı için `Bilgi` adında bir fonksiyon tanımlanmıştır. Bu fonksiyon, yapının alanlarını kullanarak bir bilgi metni döndürür.
 
-## Harita İşlemleri (Map Operations)
+## Yapı Örnekleri (Struct Examples)
 
-### Değer Ekleme ve Güncelleme
+Aşağıda farklı yapı örnekleri bulunmaktadır:
 
-Bir haritaya değer eklemek veya güncellemek için anahtar kullanılır:
-
-```go
-m["a"] = 1
-m["b"] = 2
-m["a"] = 3 // "a" anahtarının değerini günceller
-```
-
-### Değer Okuma
-
-Bir haritadan değer okumak için anahtar kullanılır:
+### Adres Yapısı
 
 ```go
-value := m["a"]
-fmt.Println(value) // 3
-```
-
-### Değer Silme
-
-Bir haritadan değer silmek için `delete` fonksiyonu kullanılır:
-
-```go
-delete(m, "a")
-fmt.Println(m) // "a" anahtarı silinmiştir
-```
-
-### Anahtarın Varlığını Kontrol Etme
-
-Bir anahtarın haritada olup olmadığını kontrol etmek için iki değer döndüren bir okuma işlemi yapılır:
-
-```go
-value, exists := m["b"]
-if exists {
-    fmt.Println("Anahtar mevcut:", value)
-} else {
-    fmt.Println("Anahtar mevcut değil")
+type Adres struct {
+    Sokak  string
+    Sehir  string
+    Ulke   string
 }
 ```
 
-## Harita Örnekleri (Map Examples)
-
-### Basit Bir Harita Örneği
+### Kitap Yapısı
 
 ```go
-package main
-
-import "fmt"
-
-func main() {
-    m := make(map[string]int)
-    m["k1"] = 7
-    m["k2"] = 13
-
-    fmt.Println("map:", m)
-
-    v1 := m["k1"]
-    fmt.Println("v1: ", v1)
-
-    fmt.Println("len:", len(m))
-
-    delete(m, "k2")
-    fmt.Println("map:", m)
-
-    _, prs := m["k2"]
-    fmt.Println("prs:", prs)
-
-    n := map[string]int{"foo": 1, "bar": 2}
-    fmt.Println("map:", n)
+type Kitap struct {
+    Baslik     string
+    Yazar      string
+    SayfaSayisi int
 }
 ```
 
-Bu örnekte, çeşitli harita işlemleri gösterilmiştir: değer ekleme, okuma, silme ve anahtarın varlığını kontrol etme.
+Bu ders kapsamında, Go dilinde yapıların nasıl tanımlandığını, kullanıldığını ve üzerinde nasıl işlemler yapıldığını öğrendiniz. Yapılar, verileri organize etmek ve yönetmek için güçlü bir araçtır.

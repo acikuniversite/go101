@@ -1,12 +1,3 @@
-# Ders 3: Değişkenler ve Veri Tipleri (Variables and Data Types)
-
-Bu derste Go dilinde değişkenler (variables) ve veri tiplerini (data types) öğreneceksiniz.
-
-## İçerik
-
-- Değişken tanımlama (variable declaration)
-- Temel veri tipleri (basic data types)
-- Tip dönüşümleri (type conversions)
 # Ders 3: Fonksiyonlar ve Paketler (Functions and Packages)
 
 Bu derste Go dilinde fonksiyonları ve paketleri öğreneceksiniz.
@@ -116,3 +107,10 @@ func main() {
 Bu şekilde, `greetings` paketini `main` paketinde kullanabilirsiniz.
 
 Bu dersin sonunda, Go dilinde fonksiyonları ve paketleri nasıl kullanacağınızı öğrenmiş olacaksınız. Bir sonraki derste daha ileri seviye konulara geçeceğiz.
+
+## Teorikten Pratiğe Ödev:
+
+1. Bir fonksiyon tanımlayın ve bu fonksiyonu çağırarak ekrana bir metin yazdırın.
+2. Bir fonksiyon tanımlayın ve bu fonksiyona iki tamsayı parametre göndererek bu parametrelerin toplamını ekrana yazdırın.
+3. Go'nun standart kütüphanesinden math ve time paketlerini kullanarak birkaç örnek uygulama yazın.
+4. Kendi paketinizi oluşturun ve bu paketi kullanarak bir fonksiyon çağırın.

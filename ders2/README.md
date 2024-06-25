@@ -1,12 +1,3 @@
-# Ders 2: Temel Go Sözdizimi (Basic Go Syntax)
-
-Bu derste Go dilinin temel sözdizimini (syntax) öğreneceksiniz.
-
-## İçerik
-
-- Go programının yapısı (structure)
-- Temel sözdizimi kuralları (basic syntax rules)
-- Değişken tanımlama (variable declaration)
 # Ders 2: Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)
 
 Bu derste Go programlama dilinin temel söz dizimini ve veri tiplerini öğreneceksiniz.
@@ -142,3 +133,20 @@ for index, value := range numbers {
 ```
 
 Bu dersin sonunda, Go programlama dilinin temel söz dizimini ve veri tiplerini öğrenmiş olacaksınız. Bir sonraki derste fonksiyonlar ve paketler hakkında daha fazla bilgi edineceksiniz.
+
+## Teorikten Pratiğe Ödev:
+
+1. Değişkenler: Bir tamsayı ve bir metin değişkeni tanımlayın ve bu değişkenleri ekrana yazdırın.
+2. Değişkenler: Bir mantıksal ve bir ondalıklı sayı değişkeni tanımlayın ve bu değişkenleri toplayıp ekranı yazdırın.
+3. Sabitler: Pi sayısını temsil eden bir sabit tanımlayın ve ekrana yazdırın.
+4. Operatörler: İki tamsayı değişkeni tanımlayın ve bu değişkenler üzerinde aritmetik işlemler yaparak sonuçları ekrana yazdırın.
+5. Kontrol Yapıları: Bir tamsayı değişkeni tanımlayın ve bu değişkenin pozitif, negatif veya sıfır olduğunu kontrol eden bir program yazın.
+6. Döngüler: 1'den 10'a kadar olan sayıları ekrana yazdıran bir program yazın.
+7. Range: Bir dilim (slice) tanımlayın ve bu dilimdeki elemanları ekrana yazdırın.
+8. Görevleri tamamladıktan sonra ödevinizi fork edilmiş reponuzda `ders2` klasörü altında `main.go` dosyası olarak kaydedin ve pull request oluşturun.
+9. Pull request linkini ödev teslim formunda paylaşın.
+
+## Sonraki Ders
+
+Sonraki derste [Go'da değişkenler ve veri tiplerini](./ders3) daha detaylı olarak öğreneceksiniz.
+[]: # (END)

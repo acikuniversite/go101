@@ -1,58 +1,115 @@
-# Ders 6: Diziler ve Dilimler (Arrays and Slices)
+# Ders 6: Haritalar (Maps)
 
-Bu derste Go dilinde diziler (arrays) ve dilimleri (slices) öğreneceksiniz.
+Bu derste Go dilinde haritaları (maps) öğreneceksiniz.
 
 ## İçerik
 
-- Dizi tanımlama (array definition)
-- Dilim tanımlama (slice definition)
-- Dilim işlemleri (slice operations)
+- Harita Tanımlama (Map Definition)
+- Harita İşlemleri (Map Operations)
+- Harita Örnekleri (Map Examples)
 
-## Dizi Tanımlama (Array Definition)
+## Harita Tanımlama (Map Definition)
 
-Go dilinde diziler sabit uzunlukta ve aynı türden elemanlar içeren veri yapılarıdır. Bir dizi tanımlamak için aşağıdaki sözdizimini kullanabilirsiniz:
-
-```go
-var dizi [5]int
-```
-
-Bu örnekte, `dizi` adında ve 5 tamsayı (int) eleman içeren bir dizi tanımlanmıştır. Dizinin elemanlarına indeks numarası ile erişebilirsiniz:
+Go dilinde haritalar, anahtar-değer (key-value) çiftlerini saklamak için kullanılır. Haritalar `map` anahtar kelimesi ile tanımlanır. Örneğin:
 
 ```go
-dizi[0] = 10
-fmt.Println(dizi[0]) // 10
+package main
+
+import "fmt"
+
+func main() {
+    var m map[string]int
+    m = make(map[string]int)
+    fmt.Println(m)
+}
 ```
 
-## Dilim Tanımlama (Slice Definition)
+Yukarıdaki kodda, `m` adında bir harita tanımlanmıştır. Bu harita `string` türünde anahtarlar ve `int` türünde değerler saklar.
 
-Dilimler, dizilerin dinamik boyutlu versiyonlarıdır. Bir dilim tanımlamak için aşağıdaki sözdizimini kullanabilirsiniz:
+## Harita İşlemleri (Map Operations)
+
+### Değer Ekleme ve Güncelleme
+
+Bir haritaya değer eklemek veya güncellemek için anahtar kullanılır:
 
 ```go
-var dilim []int
+m["a"] = 1
+m["b"] = 2
+m["a"] = 3 // "a" anahtarının değerini günceller
 ```
 
-Dilimler, dizilerden farklı olarak başlangıçta belirli bir uzunluğa sahip değildir. Eleman ekleyerek dilimi büyütebilirsiniz:
+### Değer Okuma
+
+Bir haritadan değer okumak için anahtar kullanılır:
 
 ```go
-dilim = append(dilim, 10)
-fmt.Println(dilim[0]) // 10
+value := m["a"]
+fmt.Println(value) // 3
 ```
 
-## Dilim İşlemleri (Slice Operations)
+### Değer Silme
 
-Dilimler üzerinde çeşitli işlemler yapabilirsiniz. Örneğin, bir dilimin belirli bir kısmını almak için dilimleme operatörünü kullanabilirsiniz:
+Bir haritadan değer silmek için `delete` fonksiyonu kullanılır:
 
 ```go
-dizi := [5]int{1, 2, 3, 4, 5}
-dilim := dizi[1:4]
-fmt.Println(dilim) // [2 3 4]
+delete(m, "a")
+fmt.Println(m) // "a" anahtarı silinmiştir
 ```
 
-Dilimler ayrıca uzunluk (length) ve kapasite (capacity) bilgilerine sahiptir:
+### Anahtarın Varlığını Kontrol Etme
+
+Bir anahtarın haritada olup olmadığını kontrol etmek için iki değer döndüren bir okuma işlemi yapılır:
 
 ```go
-fmt.Println(len(dilim)) // 3
-fmt.Println(cap(dilim)) // 4
+value, exists := m["b"]
+if exists {
+    fmt.Println("Anahtar mevcut:", value)
+} else {
+    fmt.Println("Anahtar mevcut değil")
+}
 ```
 
-Bu dersin sonunda, Go dilinde diziler ve dilimler ile ilgili temel kavramları öğrenmiş olacaksınız. Bu konular, Go dilinde veri yapıları ve algoritmalar üzerinde çalışırken oldukça önemlidir.
+## Harita Örnekleri (Map Examples)
+
+### Basit Bir Harita Örneği
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    m := make(map[string]int)
+    m["k1"] = 7
+    m["k2"] = 13
+
+    fmt.Println("map:", m)
+
+    v1 := m["k1"]
+    fmt.Println("v1: ", v1)
+
+    fmt.Println("len:", len(m))
+
+    delete(m, "k2")
+    fmt.Println("map:", m)
+
+    _, prs := m["k2"]
+    fmt.Println("prs:", prs)
+
+    n := map[string]int{"foo": 1, "bar": 2}
+    fmt.Println("map:", n)
+}
+```
+
+Bu örnekte, çeşitli harita işlemleri gösterilmiştir: değer ekleme, okuma, silme ve anahtarın varlığını kontrol etme.
+
+
+### Teorikten Pratiğe Ödevler
+
+1. Öğrenci bilgilerini saklayan bir harita tanımlayın. Haritada öğrenci numarası (int) anahtar, öğrenci adı (string) ve öğrenci notu (float64) değerleri olsun. Haritaya en az 3 öğrenci ekleyin ve haritayı ekrana yazdırın. (Öğrenci numarası, adı ve notu farklı olmalıdır.)
+2. Bir haritada, bir öğrencinin notunu güncelleyin ve haritayı ekrana yazdırın.
+3. Bir haritadan bir öğrenciyi silin ve haritayı ekrana yazdırın.
+4. Bir haritada, bir öğrencinin var olup olmadığını kontrol edin ve sonucu ekrana yazdırın.
+5. Bir haritada, bir öğrencinin notunu okuyun ve ekrana yazdırın.
+
+### Sonraki Ders: [Yapılar (Structs)] (../ders7/README.md)

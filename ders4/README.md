@@ -1,12 +1,3 @@
-# Ders 4: Kontrol Yapıları (Control Structures)
-
-Bu derste Go dilinde kontrol yapıları (control structures) öğreneceksiniz.
-
-## İçerik
-
-- If-else yapıları (if-else structures)
-- Switch-case yapıları (switch-case structures)
-- Döngüler (loops)
 # Ders 4: Diziler ve Dilimler (Arrays and Slices)
 
 Bu derste Go dilinde diziler (arrays) ve dilimleri (slices) öğreneceksiniz.
@@ -110,3 +101,28 @@ func main() {
 Yukarıdaki örnekte, `matrix` adında iki boyutlu bir tamsayı dizisi tanımlanmış ve elemanları atanmıştır.
 
 Bu dersin sonunda, Go dilinde diziler ve dilimleri nasıl kullanacağınızı öğrenmiş olacaksınız. Bir sonraki derste daha ileri seviye konulara geçeceğiz.
+
+## Teorikten Pratiğe Ödev:
+
+1. Bir tamsayı dizisi tanımlayın ve bu dizinin elemanlarını ekrana yazdırın.
+2. Bir dilim tanımlayın ve bu dilime elemanlar ekleyerek ekrana yazdırın.
+3. İki boyutlu bir tamsayı dizisi tanımlayın ve bu dizinin elemanlarını ekrana yazdırın.
+4. Bir dilim üzerinde dilim uzunluğu ve kapasitesi hakkında denemeler yapın.
+5. İki boyutlu bir dizi üzerinde işlemler yaparak sonuçları ekrana yazdırın.
+6. 6x6 boyutunda bir matris oluşturun bu matrisin Transpozunu alın ve Transpozu ile orijinal matrisi topalayın. Sonucu ekrana yazdırın.
+
+6x6 Matris:
+```
+1 1 1 1 1 1
+2 4 6 8 10 12
+3 9 12 15 18 21
+4 16 20 24 28 32
+5 25 30 35 40 45
+6 36 42 48 54 60
+```
+
+
+## Sonraki Ders: [Ders 5: Gelişmiş Fonksiyonlar (Advanced Functions)](../ders5/README.md)
+
+
+

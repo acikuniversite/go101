@@ -89,3 +89,17 @@ go run main.go
 Eğer her şey doğru ayarlandıysa, terminalde "Merhaba, Dünya!" çıktısını görmelisiniz.
 
 Tebrikler! İlk Go programınızı başarıyla yazdınız ve çalıştırdınız.
+
+
+## Teorikten Pratiğe Ödev:
+
+1. Go'nun kurulumunu gerçekleştirin ve çalışma ortamınızı ayarlayın.
+2. Çıktı olarak `Açık Üniversiteye Hoş Geldiniz!` yazan bir Go programı yazın.
+3. Programı çalıştırarak çıktıyı kontrol edin.
+4. Programı farklı bir çıktı ile güncelleyin ve tekrar çalıştırın.
+5. Görevleri tamamladıktan sonra ödevinizi fork edilmiş reponuzda `ders1` klasörü altında `main.go` dosyası olarak kaydedin ve pull request oluşturun.
+6. Pull request linkini ödev teslim formunda paylaşın.
+
+## Sonraki Ders
+
+Sonraki derste [Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)](../ders2) ve veri tiplerini öğreneceksiniz.

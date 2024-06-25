@@ -148,4 +148,4 @@ Bu dersin sonunda, Go programlama dilinin temel söz dizimini ve veri tiplerini 
 
 ## Sonraki Ders
 
-Sonraki derste [Go'da değişkenler ve veri tiplerini](../ders3) daha detaylı olarak öğreneceksiniz.
+[Fonksiyonlar ve Paketler (Functions and Packages)](../ders3)

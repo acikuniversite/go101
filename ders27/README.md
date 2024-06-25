@@ -114,3 +114,8 @@ Go dilinde performans analizi yaparken kullanabileceğiniz bazı araçlar şunla
 ## Sonuç
 
 Bu derste, Go dilinde performans analizi yapmayı öğrendiniz. Profil oluşturma araçlarını kullanarak kodunuzun performansını nasıl analiz edebileceğinizi ve performans iyileştirmeleri yapabileceğinizi gördünüz. Bu bilgilerle, Go uygulamalarınızın performansını artırabilirsiniz.
+
+### Sonraki Ders
+
+[# Ders 28: Go ile CLI Uygulamaları Geliştirme
+](../ders28/README.md)

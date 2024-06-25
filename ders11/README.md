@@ -94,3 +94,7 @@ func main() {
 ```
 
 Bu dersin sonunda, Go dilinde goroutine'ler ve concurrency ile ilgili temel kavramları öğrenmiş olacaksınız.
+
+### Sonraki Ders
+
+[# Ders 12: Goroutine Advanced Patterns (İleri Goroutine Desenleri)](../ders12/README.md)

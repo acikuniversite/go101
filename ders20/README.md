@@ -163,3 +163,6 @@ func main() {
 ## 5. Sonuç
 
 Bu dersimizde, Go dilinde JWT kullanarak kimlik doğrulama işlemlerini nasıl gerçekleştireceğimizi öğrendik. JWT, güvenli ve verimli bir kimlik doğrulama yöntemi sunar. Bu bilgileri kullanarak kendi projelerinizde güvenli kimlik doğrulama mekanizmaları oluşturabilirsiniz.
+
+### Sonraki Ders
+[# Ders 21: Go ile JSON İşlemleri](../ders21/README.md)

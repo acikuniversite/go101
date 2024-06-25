@@ -108,5 +108,6 @@ Ozet: Bir öğrenci ve öğrertmen ilişkisi tutan struct tanımlama
 4. AddOgrenci ve AddOgretmen fonksiyonları ile öğrenci ve öğretmen ekleyin.
 5. 
 
+## Sonraki Ders
 
-Sonraki Ders: [Yapılar (Structs)] (../ders7/README.md)
+[# Ders 8: Arayüzler (Interfaces)](../ders8/README.md)

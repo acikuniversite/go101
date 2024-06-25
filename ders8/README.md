@@ -153,4 +153,6 @@ Bu ders, Go dilinde arayüzlerin nasıl tanımlandığını, kullanıldığını
 5. Temel bir fonksiyon oluşturup arayüz ile robotları yönlendirin.
 6. Her iki robot türü için de ileri ve yana gitme yöntemlerini çağırarak robotların hareketini kontrol edin.
 
-### Sonraki Ders [Ders 9: Generic Yapılar ve Fonksiyonlar (Generics)](../ders9/README.md)
+### Sonraki Ders 
+
+[Ders 9: Generic Yapılar ve Fonksiyonlar (Generics)](../ders9/README.md)

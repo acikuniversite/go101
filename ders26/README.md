@@ -98,3 +98,7 @@ Mocking, bağımlılıkları izole etmek ve test etmek için sahte nesneler kull
 ## Sonuç
 
 Bu derste, Go dilinde birim testlerinin nasıl yazılacağını öğrendiniz. Test paketini kullanarak basit ve tablolu testler yazabilir, test kapsamını ölçebilir ve mocking yapabilirsiniz. Birim testleri, kodunuzun kalitesini artırmak ve hataları erken tespit etmek için önemlidir.
+
+### Sonraki Ders
+
+[# Ders 27: Go ile Performans Analizi](../ders27/README.md)

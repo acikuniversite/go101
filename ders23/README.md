@@ -173,3 +173,8 @@ func NewRouter(userController *interfaces.UserController) *http.ServeMux {
 ```
 
 Bu örnek proje, Go dilinde Clean Architecture prensiplerini uygulayarak basit bir kullanıcı yönetim sistemi oluşturur. Bu yapı, kodun daha sürdürülebilir, test edilebilir ve genişletilebilir olmasını sağlar.
+
+
+### Sonraki Ders
+
+[# Ders 24: Go ile WebSocket Kullanımı](../ders24/README.md)

@@ -145,3 +145,7 @@ spec:
         ports:
         - containerPort: 8080
 ```
+
+### Sonraki Ders
+
+[# Ders 30: Go ile Serverless](../ders30/README.md)

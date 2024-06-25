@@ -109,3 +109,7 @@ Bu bölümde, yukarıdaki kodları kullanarak basit bir sohbet uygulaması oluş
 ## Sonuç
 
 Bu derste, Go dilinde WebSocket kullanarak nasıl gerçek zamanlı veri iletişimi yapabileceğinizi öğrendiniz. WebSocket, özellikle gerçek zamanlı uygulamalar için oldukça kullanışlı bir protokoldür ve Go dilinde kullanımı oldukça basittir.
+
+### Sonraki Ders
+
+[# Ders 25: Go ile Şifreleme ve Güvenlik](../ders25/README.md)

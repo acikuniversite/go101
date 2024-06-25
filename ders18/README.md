@@ -111,3 +111,8 @@ func BenchmarkOptimizedAdd(b *testing.B) {
 ```
 
 Yukarıdaki örnekte, `Add` fonksiyonunu optimize ettik ve performansını ölçtük. Profiling sonuçlarına göre, daha fazla iyileştirme yapabilirsiniz.
+
+
+### Sonraki Ders
+
+[# Ders 19: Go'da Docker ve CI/CD](../ders19/README.md)

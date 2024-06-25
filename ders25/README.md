@@ -133,3 +133,7 @@ Bu bölümde, yukarıda öğrendiğiniz şifreleme tekniklerini kullanarak basit
 ## Sonuç
 
 Bu derste, Go dilinde şifreleme ve güvenlik konularını ele aldık. AES ve RSA şifreleme algoritmalarını, hash fonksiyonlarını ve bu teknikleri nasıl uygulayacağınızı öğrendiniz. Şimdi, bu bilgileri kullanarak kendi güvenli uygulamalarınızı geliştirebilirsiniz.
+
+### Sonraki Ders
+
+[# Ders 26: Go ile Unit Test Yazma](../ders26/README.md)

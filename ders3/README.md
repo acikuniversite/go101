@@ -115,4 +115,6 @@ Bu dersin sonunda, Go dilinde fonksiyonları ve paketleri nasıl kullanacağın�
 3. Go'nun standart kütüphanesinden math ve time paketlerini kullanarak birkaç örnek uygulama yazın.
 4. Kendi paketinizi oluşturun ve bu paketi kullanarak bir fonksiyon çağırın.
 
-Sonraki derste [Diziler ve Dilimler (Arrays and Slices)](../ders4/README.md) konularını öğreneceksiniz.
+## Sonraki Ders
+
+[Diziler ve Dilimler (Arrays and Slices)](../ders4/README.md)

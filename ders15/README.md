@@ -139,3 +139,7 @@ Gin, daha karmaşık web uygulamaları geliştirmek için birçok özellik sunar
 ## Sonuç
 
 Bu derste, Golang kullanarak basit bir web uygulaması geliştirmeyi öğrendik. Golang'in güçlü ve verimli yapısını kullanarak daha karmaşık web uygulamaları geliştirebilirsiniz. İyi çalışmalar!
+
+### Sonraki Ders
+
+[# Ders 16 - Golang ile Veritabanı İşlemleri (Database Operations)](../ders16/README.md)

@@ -150,3 +150,8 @@ func Connect() (*sql.DB, error) {
 ```
 
 Bu örnek, basit bir mikroservisin nasıl yapılandırılacağını ve Go dilinde nasıl kodlanacağını göstermektedir. Daha karmaşık mikroservisler için, bu temel yapı genişletilebilir ve ek bileşenler eklenebilir.
+
+
+### Sonraki Ders
+
+[# Ders 15 - Golang ile Web Uygulamaları](../ders15/README.md)

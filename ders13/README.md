@@ -273,3 +273,8 @@ func main() {
 }
 ```
 
+
+### Sonraki Ders
+
+[# Mikroservisler ve Klasör Yapısı Golang](../ders14/README.md)
+

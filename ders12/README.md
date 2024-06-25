@@ -142,3 +142,8 @@ Bu kodda, her gelen HTTP isteği için bir goroutine başlatılır ve istek işl
 
 Bu dersin sonuna geldik. Goroutine'lerin gücünü ve esnekliğini anlamak, Go dilinde etkili ve verimli programlar yazmanıza yardımcı olacaktır.
 
+### Sonraki Ders
+
+[# Advanced Patterns in Go (Go'da İleri Desenler)](../ders13/README.md)
+
+

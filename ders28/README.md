@@ -165,3 +165,7 @@ func main() {
 ## Sonuç
 
 Bu derste, Go dilinde CLI uygulamaları geliştirmenin temellerini öğrendik. Bayraklar, argümanlar ve alt komutlar gibi temel bileşenleri inceledik ve basit bir CLI uygulaması geliştirdik. Bu bilgilerle, kendi CLI araçlarınızı geliştirebilir ve terminal üzerinden kullanıcılarla etkileşime geçebilirsiniz.
+
+### Sonraki Ders
+
+[# Ders 29: Go ile Mikroservis Mimarisi](../ders29/README.md)

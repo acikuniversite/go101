@@ -135,3 +135,7 @@ Bu örnekte, `Kisi` yapısı önce JSON formatına dönüştürülür, ardından
 ## Sonuç
 
 Bu derste, Go dilinde JSON verilerini nasıl serileştireceğinizi ve çözeceğinizi öğrendiniz. JSON işlemleri, veri değişimi ve API geliştirme gibi birçok alanda oldukça kullanışlıdır. Bu temel bilgileri kullanarak daha karmaşık JSON işlemleri gerçekleştirebilirsiniz.
+
+### Sonraki Ders
+
+[# Ders 22: Go ile Dosya İşlemleri](../ders22/README.md)

@@ -112,4 +112,6 @@ Bu örnekte, çeşitli harita işlemleri gösterilmiştir: değer ekleme, okuma,
 4. Bir haritada, bir öğrencinin var olup olmadığını kontrol edin ve sonucu ekrana yazdırın.
 5. Bir haritada, bir öğrencinin notunu okuyun ve ekrana yazdırın.
 
-Sonraki Ders: [
+### Sonraki Ders: 
+
+[# Ders 7: Yapılar (Structs)](../ders7/README.md)

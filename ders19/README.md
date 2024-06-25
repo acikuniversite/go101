@@ -96,3 +96,7 @@ jobs:
 ```
 
 Bu dersin sonunda, Docker ve CI/CD süreçlerini Go projelerinizde nasıl kullanacağınızı öğrenmiş olacaksınız.
+
+### Sonraki Ders
+
+[# Ders 20: Go'da JWT ve Auth](../ders20/README.md)

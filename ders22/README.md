@@ -144,3 +144,6 @@ func main() {
 ```
 
 Bu dersin sonunda, Go dilinde dosya işlemlerini nasıl gerçekleştirebileceğinizi öğrenmiş olacaksınız. Bu temel bilgiler, dosya tabanlı uygulamalar geliştirirken size yardımcı olacaktır.
+
+
+[# Ders 23: Go'da Clean Architecture](../ders23/README.md)

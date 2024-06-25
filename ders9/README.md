@@ -132,4 +132,6 @@ Bu derste Go dilinde generic yapıları (generics) öğrendik. Generic yapılar,
 Queue Nedir: [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 FIFO Nedir: [FIFO](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics))
 
-## Sonraki Ders: [Ders 10: Hata 
+## Sonraki Ders: 
+
+[# Ders 10: Hata Yönetimi (Error Handling)](../ders10/README.md)

@@ -212,3 +212,8 @@ func TestGetUsers(t *testing.T) {
 ## Sonuç
 
 Bu derste, Go dilinde basit bir RESTful API oluşturmayı öğrendik. API'lerinizi geliştirirken, hata yönetimi ve test etme konularına dikkat etmeniz önemlidir. Bir sonraki derste, daha ileri seviye API geliştirme konularını ele alacağız.
+
+
+### Sonraki Ders
+
+[# Ders 18: Testler ve Performans](../ders18/README.md)

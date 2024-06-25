@@ -102,4 +102,4 @@ Tebrikler! İlk Go programınızı başarıyla yazdınız ve çalıştırdınız
 
 ## Sonraki Ders
 
-Sonraki derste [Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)](../ders2) ve veri tiplerini öğreneceksiniz.
+[Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)](../ders2) 

@@ -131,3 +131,8 @@ if err != nil {
 ```
 
 Bu dersin sonunda, Golang ile temel veritabanı işlemlerini gerçekleştirebilecek bilgiye sahip olacaksınız.
+
+
+### Sonraki Ders
+
+[# # Ders 17: API Geliştirme](../ders17/README.md)

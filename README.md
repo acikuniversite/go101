@@ -1,3 +1,4 @@
+## [Açık Üniversite](https://www.acikuniversite.org)
 # Golang 101 Eğitimi
 
 Bu repo, Golang dilini öğrenmek isteyenler için temel konuları içeren bir eğitim serisi sunar. Her ders kendi klasöründe yer almakta ve her klasörde dersin içeriğini açıklayan bir `README.md` dosyası bulunmaktadır.

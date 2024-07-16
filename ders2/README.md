@@ -45,6 +45,8 @@ Kısa yol olarak `:=` operatörü ile de tanımlanabilir:
 y := 10
 ```
 
+```go
+
 ### Sabitler (Constants)
 
 Sabitler `const` anahtar kelimesi ile tanımlanır:
@@ -52,6 +54,28 @@ Sabitler `const` anahtar kelimesi ile tanımlanır:
 ```go
 const pi = 3.14
 ```
+
+<details>
+<summary><b>Ders Alıştırması: 2 farklı değişken ve bir tane sabit tanımlayın ve ekrana yazdırın.</b></summary>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var x int
+    x = 5
+    fmt.Println(x)
+
+    y := 10
+    fmt.Println(y)
+	
+    const pi = 3.14
+    fmt.Println(pi)
+}
+```
+</details>
 
 ## Temel Veri Tipleri (Basic Data Types)
 
@@ -69,6 +93,37 @@ var age int = 30
 var name string = "Ali"
 var isStudent bool = true
 var gpa float64 = 3.75
+```
+
+
+<details>
+<summary><b>Ders Alıştırması: bir öğrencinin adını soyadını telefon numarasını ve final notunu kayıt altına alın.</b></summary>
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+
+	    var name string
+        var surname string
+        var phone string
+        var finalNotu int
+		
+		fmt.Println("Öğrenci Adı: ")
+		fmt.Scanln(&name)
+		
+		fmt.Println("Öğrenci Soyadı: ")
+		fmt.Scanln(&surname)
+		
+		fmt.Println("Öğrenci Telefon Numarası: ")
+		fmt.Scanln(&phone)
+		
+		fmt.Println("Öğrenci Final Notu: ")
+		fmt.Scanln(&finalNotu)
+}
 ```
 
 ## Operatörler (Operators)
@@ -90,6 +145,26 @@ isEqual := (a == b)
 isGreater := (a > b)
 ```
 
+<details>
+<summary><b>Ders Alıştırması: x için `x^2+2x+5` formülünü kullanarak x'in değerini hesaplayın.</b></summary>
+
+```go
+package main
+
+import "fmt"
+
+func main()  {
+    fmt.Println("x değerini girin: ")
+    var x int
+    fmt.Scanln(&x)
+	
+	fmt.Printf("Sonuç: %d\n", x*x + 2*x + 1)
+}
+
+```
+
+</details>
+
 ## Kontrol Yapıları (Control Structures)
 
 ### If-Else
@@ -101,6 +176,32 @@ if age >= 18 {
     fmt.Println("You are a minor.")
 }
 ```
+
+<details>
+<summary><b>Ders Alıştırması: Bir öğrencinin vize ve final notuna göre geçip geçmediğini kontrol edin. (vize %40 final %60)</b></summary>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var vizeNotu, finalNotu float64
+	fmt.Println("Vize notunu girin: ")
+	fmt.Scanln(&vizeNotu)
+	fmt.Println("Final notunu girin: ")
+	fmt.Scanln(&finalNotu)
+	
+	result := vizeNotu*0.4 + finalNotu*0.6
+	if result >= 50 {
+        fmt.Println("Geçtiniz.")
+    } else {
+		        fmt.Println("Kaldınız.")
+	}
+}
+```
+
+</details>
 
 ### Switch
 
@@ -115,6 +216,39 @@ default:
 }
 ```
 
+<details>
+<summary><b>Ders Alıştırması: Bir öğrencinin öğrenim kredisini hangi gün alacağını söyleyen uygulama (TC Kimlik numarasının sonu “0” olanlar 6 Aralık, “2” olanlar 7 Aralık, “4” olanlar 8 Aralık, “6” olanlar 9 Aralık, “8” olanlar 10 Aralık'ta ödemelerini alabiliyor.)</b></summary>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("TC Kimlil Numaranınız giriniz ")
+	var tcNo int
+	fmt.Scanln(&tcNo)
+	
+	switch tcNo % 10 {
+	case 0:
+        fmt.Println("6 Aralık'ta öğrenim kredinizi alabilirsiniz.")
+	case 2:
+        fmt.Println("7 Aralık'ta öğrenim kredinizi alabilirsiniz.")
+    case 4:
+        fmt.Println("8 Aralık'ta öğrenim kredinizi alabilirsiniz.")
+    case 6:
+        fmt.Println("9 Aralık'ta öğrenim kredinizi alabilirsiniz.")
+    case 8:
+        fmt.Println("10 Aralık'ta öğrenim kredinizi alabilirsiniz.")
+    default:
+        fmt.Println("Öğrenim kredinizi alabileceğiniz bir gün bulunmamaktadır.")
+	}
+	
+}
+```
+
+</details>
+
 ### For Döngüsü (For Loop)
 
 ```go
@@ -122,6 +256,24 @@ for i := 0; i < 5; i++ {
     fmt.Println(i)
 }
 ```
+
+<details>
+<summary><b>Ders Alıştırması: 1'den 10'a kadar olan sayıları ekrana yazdırın.</b></summary>
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+    for i := 1; i <= 10; i++ {
+        fmt.Println(i)
+    }
+}
+```
+
+</details>
 
 ### Range
 
@@ -132,7 +284,25 @@ for index, value := range numbers {
 }
 ```
 
-Bu dersin sonunda, Go programlama dilinin temel söz dizimini ve veri tiplerini öğrenmiş olacaksınız. Bir sonraki derste fonksiyonlar ve paketler hakkında daha fazla bilgi edineceksiniz.
+<details>
+<summary><b>Ders Alıştırması: 1'den 5'e kadar olan sayıları bir dilimde (slice) tanımlayın ve dilimdek elemanları her adım toplayıp ekrana yazdırın.</b></summary>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    numbers := []int{1, 2, 3, 4, 5}
+    sum := 0
+    for _, value := range numbers {
+        sum += value
+    }
+    fmt.Println(sum)
+}
+```
+
+</details>
 
 ## Teorikten Pratiğe Ödev:
 
@@ -145,6 +315,7 @@ Bu dersin sonunda, Go programlama dilinin temel söz dizimini ve veri tiplerini 
 7. Range: Bir dilim (slice) tanımlayın ve bu dilimdeki elemanları ekrana yazdırın.
 8. Görevleri tamamladıktan sonra ödevinizi fork edilmiş reponuzda `ders2` klasörü altında `main.go` dosyası olarak kaydedin ve pull request oluşturun.
 9. Pull request linkini ödev teslim formunda paylaşın.
+
 
 ## Sonraki Ders
 

@@ -126,6 +126,8 @@ func main() {
 }
 ```
 
+</details>
+
 ## Operatörler (Operators)
 
 Go'da yaygın olarak kullanılan operatörler şunlardır:

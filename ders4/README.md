@@ -50,8 +50,34 @@ func main() {
     fmt.Println(numbers)
 }
 ```
-
 Yukarıdaki örnekte, `numbers` adında bir dilim tanımlanmış ve elemanları atanmıştır.
+
+<details>
+<summary><b>Ders Alıştırması: 9 boşluğu olan bir dilim tanımlayın ve bu dilime 1'den 9'a kadar olan sayıları ekleyin. Sonucu ekrana yazdırın.</b></summary>
+
+```go
+package main
+
+import "fmt"
+
+func main()  {
+    dizi := make([]int, 9)
+	    for i := 0; i < 9; i++ {
+        dizi[i] = i + 1
+    }
+    fmt.Println(dizi)
+}
+
+```
+
+</details>
+
+### [9]int ile make([]int, 9) arasındaki fark nedir?
+
+- `make([]int, 9)` ifadesi, 9 elemanlı bir dilim oluşturur ve uzunluğu 9'dur.
+- `[9]int` ifadesi, 9 elemanlı bir dizi oluşturur ve uzunluğu 9'dur.
+
+ikisi arasında en büyük fark, dilimlerin dinamik uzunluğa sahip olmasıdır. Bu nedenle, dilimlerin uzunluğu ve kapasitesi değiştirilebilirken, dizilerin uzunluğu sabittir.
 
 ### Dilim Operasyonları (Slice Operations)
 
@@ -74,6 +100,32 @@ func main() {
 
 Yukarıdaki örnekte, `append` fonksiyonu kullanılarak `numbers` dilimine elemanlar eklenmiştir.
 
+<details>
+<summary> Alıştırma: 0 elemanlı bir dilim tanımlayın ve bu dilime elemanlar ekleyin.</summary>
+    
+```go
+package main
+
+import "fmt"
+
+func main() {
+	numbers := make([]int, 0, 5)
+	var girdi int = 0
+	for {
+		fmt.Scanln(&girdi)
+		if girdi == -1 {
+			break
+		}
+		numbers = append(numbers, girdi)
+	}
+	fmt.Println("Dilim:", numbers)
+	fmt.Println("Uzunluk:", len(numbers))
+	fmt.Println("Kapasite:", cap(numbers))
+}
+
+```
+
+</details>
 ## Çok Boyutlu Diziler (Multidimensional Arrays)
 
 Go dilinde çok boyutlu diziler de tanımlanabilir. Örneğin, iki boyutlu bir dizi aşağıdaki şekilde tanımlanır:
@@ -102,6 +154,27 @@ Yukarıdaki örnekte, `matrix` adında iki boyutlu bir tamsayı dizisi tanımlan
 
 Bu dersin sonunda, Go dilinde diziler ve dilimleri nasıl kullanacağınızı öğrenmiş olacaksınız. Bir sonraki derste daha ileri seviye konulara geçeceğiz.
 
+<details>
+<summary>Alıştırma: bir ev krokisi çizmek için 6x6 boyutunda bir matris oluşturun ve bu matrisin transpozunu alın. Sonuçları ekrana yazdırın.</summary>
+
+```go
+package main
+
+import "fmt"
+
+func def()  {
+    kroki := [6][6]int{
+		{1,1, 1, 1, 1, 1},
+		{1,0, 0, 0, 0, 1},
+		{1,0, 1, 1, 0, 0},
+		{1,0, 1, 1, 0, 1},
+		{1,0, 0, 0, 0, 1},
+		{1,1, 1, 1, 1, 1},
+    }
+}
+```
+</details>
+
 ## Teorikten Pratiğe Ödev:
 
 1. Bir tamsayı dizisi tanımlayın ve bu dizinin elemanlarını ekrana yazdırın.
@@ -122,7 +195,7 @@ Bu dersin sonunda, Go dilinde diziler ve dilimleri nasıl kullanacağınızı ö
 ```
 
 
-Sonraki Ders: [Ders 5: Gelişmiş Fonksiyonlar (Advanced Functions)](../ders5/README.md)
+Sonraki Ders: [Ders 5: Gelişmiş Fonksiyonlar (Advanced Functions)](../ders5x/README.md)
 
 
 

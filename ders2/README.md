@@ -98,9 +98,7 @@ var gpa float64 = 3.75
 
 <details>
 <summary><b>Ders Alıştırması: bir öğrencinin adını soyadını telefon numarasını ve final notunu kayıt altına alın.</b></summary>
-
-```go
-
+<pre>
 package main
 
 import "fmt"
@@ -124,8 +122,7 @@ func main() {
 		fmt.Println("Öğrenci Final Notu: ")
 		fmt.Scanln(&finalNotu)
 }
-```
-
+</pre>
 </details>
 
 ## Operatörler (Operators)

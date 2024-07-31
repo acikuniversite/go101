@@ -36,6 +36,20 @@ Go çalışma ortamını ayarlamak için `GOPATH` ve `GOROOT` çevre değişkenl
 
 `GOPATH`, Go projelerinizin ve bağımlılıklarının saklanacağı yerdir. Örneğin, `~/go` dizinini kullanabilirsiniz.
 
+1. GOROOT:
+- Go programlama dilinin yüklü olduğu dizini belirtir.
+- Go derleyicisi, standart kütüphaneler ve diğer temel araçların bulunduğu yerdir.
+- Genellikle Go kurulumu sırasında otomatik olarak ayarlanır.
+- Örneğin: "/usr/local/go" veya "C:\Go" gibi bir yol olabilir.
+
+
+2. GOPATH:
+- Go projelerinizin, paketlerinizin ve bağımlılıklarınızın bulunduğu çalışma alanını (workspace) belirtir.
+- Üç alt dizinden oluşur: src (kaynak kodlar), pkg (derlenmiş paketler) ve bin (çalıştırılabilir dosyalar).
+- Varsayılan olarak kullanıcının ana dizininde "go" adlı bir klasör olarak ayarlanır (örn. "/home/kullanici/go" veya "C:\Users\kullanici\go").
+- Birden fazla GOPATH ayarlayabilirsiniz, ancak genellikle tek bir GOPATH kullanılır.
+
+
 ### Adım 2: Çevre Değişkenlerini Ayarlayın
 
 `GOPATH`'i ayarlamak için aşağıdaki adımları izleyin:

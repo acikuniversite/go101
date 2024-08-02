@@ -97,6 +97,24 @@ if exists {
 }
 ```
 
+### Array ve Slice Haritaları
+
+Go dilinde, haritaların içinde haritalar, diziler ve dilimler gibi veri yapıları da saklanabilir. Örneğin:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    m := make(map[string][]int)
+    m["a"] = []int{1, 2, 3}
+    m["b"] = []int{4, 5, 6}
+
+    fmt.Println(m)
+}
+```
+
 ## Harita Örnekleri (Map Examples)
 
 ### Basit Bir Harita Örneği

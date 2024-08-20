@@ -1,4 +1,4 @@
-# Ders 17: API Geliştirme
+# Ders 6: API Geliştirme
 
 Bu derste, Go dilinde API geliştirme konusunu ele alacağız. API'ler, uygulamalar arasında veri alışverişini sağlayan arayüzlerdir. Bu dersin sonunda, basit bir RESTful API oluşturmayı öğreneceksiniz.
 
@@ -183,36 +183,23 @@ func getUser(w http.ResponseWriter, r *http.Request) {
     http.NotFound(w, r)
 }
 ```
+### Gin Framework
 
-## Test Etme
-
-API'lerinizi test etmek için `net/http/httptest` paketini kullanabilirsiniz. Bu paket, HTTP isteklerini simüle etmenizi sağlar.
+Gin, Go dilinde hızlı ve basit bir web framework'tür. Gin, RESTful API'ler oluşturmak için kullanışlıdır.
 
 ```go
-import (
-    "net/http"
-    "net/http/httptest"
-    "testing"
-)
+import "github.com/gin-gonic/gin"
 
-func TestGetUsers(t *testing.T) {
-    req, err := http.NewRequest("GET", "/users", nil)
-    if err != nil {
-        t.Fatal(err)
-    }
-    rr := httptest.NewRecorder()
-    handler := http.HandlerFunc(getUsers)
-    handler.ServeHTTP(rr, req)
-    if status := rr.Code; status != http.StatusOK {
-        t.Errorf("handler returned wrong status code: got %v want %v", status, http.StatusOK)
-    }
+func main() {
+    r := gin.Default()
+    r.GET("/users", getUsers)
+    r.GET("/users/:id", getUser)
+    r.POST("/users", createUser)
+    r.PUT("/users/:id", updateUser)
+    r.DELETE("/users/:id", deleteUser)
+    r.Run(":8080")
 }
 ```
-
-## Sonuç
-
-Bu derste, Go dilinde basit bir RESTful API oluşturmayı öğrendik. API'lerinizi geliştirirken, hata yönetimi ve test etme konularına dikkat etmeniz önemlidir. Bir sonraki derste, daha ileri seviye API geliştirme konularını ele alacağız.
-
 
 ### Sonraki Ders
 

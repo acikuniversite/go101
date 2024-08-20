@@ -1,4 +1,4 @@
-# Ders 3: Fonksiyonlar ve Paketler (Functions and Packages)
+# Ders 2: Fonksiyonlar ve Paketler (Functions and Packages)
 
 Bu derste Go dilinde fonksiyonları ve paketleri öğreneceksiniz.
 

@@ -1,4 +1,4 @@
-# Ders 4: Diziler ve Dilimler (Arrays and Slices)
+# Ders 3: Diziler ve Dilimler (Arrays and Slices)
 
 Bu derste Go dilinde diziler (arrays) ve dilimleri (slices) öğreneceksiniz.
 

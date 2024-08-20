@@ -1,4 +1,4 @@
-# Ders 9: Generic Yapılar ve Fonksiyonlar (Generics) 
+# Ders 5: Generic Yapılar ve Fonksiyonlar (Generics) 
 
 Bu derste Go dilinde generic yapıları (generics) öğreneceğiz.
 
@@ -31,6 +31,14 @@ func main() {
 ```
 
 Yukarıdaki örnekte `topla` fonksiyonu, farklı veri tipleri üzerinde çalışabilen bir generic fonksiyondur. `topla` fonksiyonu, `T` adında bir generic tip alır ve bu generic tip, `a` ve `b` parametrelerinin veri tiplerini belirler. `topla` fonksiyonu, `a` ve `b` parametrelerini toplar ve sonucu döndürür.
+
+
+### Any ve Comparable Kısıtlamaları
+
+- `any`: `any` kısıtlaması, fonksiyonun herhangi bir veri tipi üzerinde çalışabilmesini sağlar.
+- `comparable`: `comparable` kısıtlaması, fonksiyonun karşılaştırılabilir veri tipleri üzerinde çalışabilmesini sağlar.
+- `numeric`: `numeric` kısıtlaması, fonksiyonun sayısal veri tipleri üzerinde çalışabilmesini sağlar.
+- 
 
 ## Generic Yapılar
 

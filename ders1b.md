@@ -1,4 +1,4 @@
-# Ders 2: Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)
+# Ders 1: Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)
 
 Bu derste Go programlama dilinin temel söz dizimini ve veri tiplerini öğreneceksiniz.
 

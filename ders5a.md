@@ -1,4 +1,4 @@
-# Ders 7: Yapılar (Structs)
+# Ders 5: Yapılar (Structs)
 
 Bu derste Go dilinde yapıları (structs) öğreneceksiniz.
 

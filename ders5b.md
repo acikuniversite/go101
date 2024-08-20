@@ -1,4 +1,4 @@
-# Ders 8: Arayüzler (Interfaces)
+# Ders 5: Arayüzler (Interfaces)
 
 Bu derste Go dilinde arayüzleri (interfaces) öğreneceksiniz.
 

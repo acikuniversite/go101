@@ -1,4 +1,4 @@
-# Ders 6: Haritalar (Maps)
+# Ders 3: Haritalar (Maps)
 
 Bu derste Go dilinde haritaları (maps) öğreneceksiniz.
 

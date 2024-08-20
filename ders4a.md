@@ -1,4 +1,4 @@
-# Ders 6: Pointerlar (Pointers)
+# Ders 4: Pointerlar (Pointers)
 
 ## Pointerlar (Pointers) Nedir?
 

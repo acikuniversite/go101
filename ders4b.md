@@ -1,4 +1,4 @@
-# Ders 10: Hata Yönetimi (Error Handling)
+# Ders 4: Hata Yönetimi (Error Handling)
 
 Bu derste Go dilinde hata yönetimini (error handling) öğreneceksiniz.
 

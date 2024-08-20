@@ -107,7 +107,3 @@ Ozet: Bir öğrenci ve öğrertmen ilişkisi tutan struct tanımlama
 3. Öğrenci ve öğretmen yapısını kullanarak öğrenci ve öğretmen bilgilerini ekrana yazdırın.
 4. AddOgrenci ve AddOgretmen fonksiyonları ile öğrenci ve öğretmen ekleyin.
 5. 
-
-## Sonraki Ders
-
-[# Ders 8: Arayüzler (Interfaces)](../ders8/README.md)

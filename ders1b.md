@@ -316,6 +316,3 @@ func main() {
 9. Pull request linkini ödev teslim formunda paylaşın.
 
 
-## Sonraki Ders
-
-[Fonksiyonlar ve Paketler (Functions and Packages)](../ders3)

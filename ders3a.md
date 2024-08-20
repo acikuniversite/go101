@@ -193,9 +193,3 @@ func def()  {
 5 25 30 35 40 45
 6 36 42 48 54 60
 ```
-
-
-Sonraki Ders: [Ders 5: Gelişmiş Fonksiyonlar (Advanced Functions)](../ders5x/README.md)
-
-
-

@@ -349,7 +349,3 @@ func main() {
 	}
 }
 ```
-
-
-Sonraki Ders [Ders 7: Yapılar (Structs)](./ders7) için [tıklayınız](./ders7)
-

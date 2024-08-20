@@ -152,7 +152,3 @@ Bu ders, Go dilinde arayüzlerin nasıl tanımlandığını, kullanıldığını
 4. ax yana giderken 1 birim yana giderken, bx 2 birim yana giderken, her iki robot türü için de yana gitme yöntemlerini tanımlayın.
 5. Temel bir fonksiyon oluşturup arayüz ile robotları yönlendirin.
 6. Her iki robot türü için de ileri ve yana gitme yöntemlerini çağırarak robotların hareketini kontrol edin.
-
-### Sonraki Ders 
-
-[Ders 9: Generic Yapılar ve Fonksiyonlar (Generics)](../ders9/README.md)

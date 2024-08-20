@@ -113,7 +113,3 @@ Tebrikler! İlk Go programınızı başarıyla yazdınız ve çalıştırdınız
 4. Programı farklı bir çıktı ile güncelleyin ve tekrar çalıştırın.
 5. Görevleri tamamladıktan sonra ödevinizi fork edilmiş reponuzda `ders1` klasörü altında `main.go` dosyası olarak kaydedin ve pull request oluşturun.
 6. Pull request linkini ödev teslim formunda paylaşın.
-
-## Sonraki Ders
-
-[Temel Go Söz Dizimi ve Veri Tipleri (Basic Go Syntax and Data Types)](../ders2) 

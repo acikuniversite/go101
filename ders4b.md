@@ -75,6 +75,3 @@ func main() {
 
 Bu dersin sonunda, Go dilinde hata yönetimi ile ilgili temel kavramları öğrenmiş olacaksınız.
 
-### Sonraki Ders
-
-[# Ders 11: Go'da Goroutine ve Concurrency](../ders11/README.md)

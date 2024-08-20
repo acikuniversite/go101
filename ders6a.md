@@ -200,7 +200,3 @@ func main() {
     r.Run(":8080")
 }
 ```
-
-### Sonraki Ders
-
-[# Ders 18: Testler ve Performans](../ders18/README.md)

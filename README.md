@@ -18,7 +18,7 @@ Bu repo, Golang dilini öğrenmek isteyenler için temel konuları içeren bir e
 13. [Ders 6a: API Geliştirme](ders6a.md)
 14. [Ders 6b: Authentication](ders6b.md)
 15. [Ders 7a: Mikroservisler ve Klasör Yapısı Golang (Microservices and Folder Structure)](ders7a.md)
-16. [Ders 7b: Golang ile Veritabanı İşlemleri (Database Operations)](desr7b.md)
+16. [Ders 7b: Golang ile Veritabanı İşlemleri (Database Operations)](ders7b.md)
 17. [Ders 8a: Goroutine](ders8a.md)
 18. [Ders 8b: Goroutine Patterns](ders8b.md)
 20. [Ders 9a: Unit Test ve Mock Test](ders9a.md)

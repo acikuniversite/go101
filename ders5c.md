@@ -102,50 +102,6 @@ func main() {
 
 Yukarıdaki örnekte `Stack` adında bir generic yapı tanımlanmıştır. `Stack` yapısı, `T` adında bir generic tip alır ve bu generic tip, `Stack` yapısının elemanlarının veri tiplerini belirler. `Stack` yapısı, `Push` ve `Pop` metodları ile eleman ekleme ve çıkarma işlemlerini gerçekleştirir.
 
-## Generic Fonksiyon ve Yapılar ile Çalışma
-
-Generic fonksiyonlar ve yapılar, farklı veri tipleri üzerinde çalışabilen yapılar olduğu için, bu yapılar ile çalışırken dikkatli olunmalıdır. Generic yapılar ve fonksiyonlar, farklı veri tipleri üzerinde çalışabilen yapılar olduğu için, bu yapılar ile çalışırken veri tiplerine dikkat edilmelidir.
-
-Örneğin, aşağıdaki örnekte `Stack` yapısına `int` veri tipi yerine `string` veri tipi ile eleman eklemeye çalışıldığında hata alınır:
-
-```go
-
-package main
-
-import "fmt"
-
-type Stack[T any] []T
-
-func (s *Stack[T]) Push(value T) {
-    *s = append(*s, value)
-}
-
-func (s *Stack[T]) Pop() T {
-    if len(*s) == 0 {
-        return nil
-    }
-    value := (*s)[len(*s)-1]
-    *s = (*s)[:len(*s)-1]
-    return value
-}
-
-func main() {
-    var s Stack[int]
-    s.Push(1)
-    s.Push(2)
-    s.Push(3)
-    fmt.Println(s.Pop()) // 3
-    fmt.Println(s.Pop()) // 2
-    fmt.Println(s.Pop()) // 1
-
-    var s2 Stack[string]
-    s2.Push("Hello")
-    s2.Push("World")
-    fmt.Println(s2.Pop()) // World
-    fmt.Println(s2.Pop()) // Hello
-}
-```
-
 ## Struct[T any] Yapısı
 
 Go dilinde generic yapılar, `struct` yapısı ile de tanımlanabilir. Örneğin, aşağıdaki örnekte `Pair` adında bir generic `struct` tanımlanmıştır:

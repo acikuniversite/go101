@@ -10,9 +10,9 @@ Go dilinde generic yapılar, Go 1.18 sürümü ile birlikte desteklenmeye başla
 
 ## Olaylı Generic Eklenmesi
 
-| <img src="go11.png" style="width: 250px;"> | <img src="go12.png" style="width: 250px;"> | <img src="go13.png" style="width: 250px;"> |
+| <img src="go13.png" style="width: 250px;"> | <img src="go12.png" style="width: 250px;"> | <img src="go11.png" style="width: 250px;"> |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
- |Rob Pike|Ken Thompson|Robert Griesemer|
+ | Rob Pike                                   |Ken Thompson| Robert Griesemer                           |
 
 Golang'de generics'in eklenme süreci oldukça ilginç ve uzun bir hikaye. Başlangıçta, Golang'in oluşturucuları Rob Pike, Ken Thompson ve Robert Griesemer, dili olabildiğince basit ve hızlı yapmak istiyorlardı. Bu yüzden, ilk versiyonlarında generics gibi karmaşık özelliklere yer vermediler. Onların hedefi, özellikle sistem programlamasında kullanılacak, anlaşılması kolay bir dil oluşturmaktı.
 

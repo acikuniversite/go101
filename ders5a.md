@@ -96,14 +96,78 @@ type Kitap struct {
 }
 ```
 
-Bu ders kapsamında, Go dilinde yapıların nasıl tanımlandığını, kullanıldığını ve üzerinde nasıl işlemler yapıldığını öğrendiniz. Yapılar, verileri organize etmek ve yönetmek için güçlü bir araçtır.
+### Ogrenci Yoklama Yapısı
 
-### Teorikten Pratiğe Ödevler (Sektörel & Gerçek Hayat Örneği ile)
+Hikaye: Acikuniversite öğrencileri, derslerine katılım durumlarını takip etmek için bir yoklama sistemi oluşturmak istiyorlar. Bu sistemde, her öğrenci için bir yoklama yapısı tanımlanmalıdır.
 
-Ozet: Bir öğrenci ve öğrertmen ilişkisi tutan struct tanımlama
+```go
+type Ogrenci struct {
+    Ad        string
+    Soyad     string
+    DiscordID string
+}
 
-1. Bir öğrenci yapısı tanımlayın. Bu yapı, öğrencinin adını, numarasını ve notlarını saklamalıdır ve öğretmen bilgisini de içermelidir.
-2. Her öğretmen bir öğrencidir ve her öğretmenin bir çok öğrencisi olabilir (struct ogrenciler array tutmalı)
-3. Öğrenci ve öğretmen yapısını kullanarak öğrenci ve öğretmen bilgilerini ekrana yazdırın.
-4. AddOgrenci ve AddOgretmen fonksiyonları ile öğrenci ve öğretmen ekleyin.
-5. 
+type Ders struct {
+    Ad      string
+}
+
+type Yoklama struct {
+    Ogrenci *Ogrenci // *Ogrenci  yerine Ogrenci da kullanılabilir, bellek kullanımı artar. direction ihtiyacı olursa Ogrenci kullanılabilir.  
+    Ders    *Ders   // *Ders yerine Ders da kullanılabilir, bellek kullanımı artar. direction ihtiyacı olursa Ders kullanılabilir. 
+    Tarih   time.Time
+    Durum   bool
+}
+
+// y Yoklama dedik çünkü yoklama yapısının içindeki sadece değeri okuyacağız.
+func (y Yoklama) String() string {
+    return fmt.Sprintf("%s adlı öğrenci, %s dersine %s tarihinde %v.", y.Ogrenci.Ad, y.Ders.Ad, y.Tarih, y.Durum)
+}
+
+// y *Yoklama dememiz gerekiyor çünkü yoklama yapısının içindeki durumu değiştireceğiz.
+func (y *Yoklama) YoklamaAl() {
+    y.Durum = true
+}
+
+func (o *Ogrenci) YoklamaYap(d *Ders, t time.Time) *Yoklama {
+    return &Yoklama{
+        Ogrenci: o,
+        Ders:    d,
+        Tarih:   t,
+        Durum:   false,
+    }
+}
+
+func main() {
+    ders := &Ders{Ad: "Go Programlama Dili"}
+    yoklamalar := []*Yoklama{}
+	tarih := time.Now()
+	ogrenciler := []*Ogrenci{
+        {Ad: "Ahmet", Soyad: "Yılmaz", DiscordID: "123456"},
+        {Ad: "Mehmet", Soyad: "Kaya", DiscordID: "654321"},
+        {Ad: "Ayşe", Soyad: "Demir", DiscordID: "987654"},
+    }
+
+    for _, ogrenci := range ogrenciler {
+        yoklama := ogrenci.YoklamaYap(ders, tarih)
+        yoklamalar = append(yoklamalar, yoklama)
+    }
+
+    for _, yoklama := range yoklamalar {
+        fmt.Println(yoklama)
+    }
+}
+```
+
+
+| Koşul | Direction | Indirection                                               |
+| --- | --- |-----------------------------------------------------------|
+| Bellek Kullanımı | Yüksek | Düşük                                                     |
+| Küçük Struct'lar | Uygun | Genellikle Gereksiz                                       |
+| Büyük Struct'lar | Bellek Tüketimi Artar | Bellek Tasarrufu Sağlar                                   |
+| Kopyalama Maliyeti | Yüksek | Düşük                                                     |
+| Veri Paylaşımı | Kopyalar Bağımsız | Aynı Veriyi Paylaşır                                      |
+| Veri Bütünlüğü | Daha Güvenli (Bağımsız Kopyalar) | Dikkat Gerektirir (Tüm Referanslar Etkilenir)             |
+| Kodun Basitliği ve Okunabilirlik | Daha Basit ve Anlaşılır | Karmaşık (Pointer Yönetimi Gerekir)                       |
+| Performans (Erişim Hızı) | Doğrudan Erişim, Daha Hızlı | Dolaylı Erişim, Biraz Daha Yavaş(İhmal edilebilir oranda) |
+| Nil (Geçersiz) Pointer Riski | Yok | Var                                                       |
+
